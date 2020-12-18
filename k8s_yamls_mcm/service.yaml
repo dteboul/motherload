@@ -14,6 +14,6 @@ spec:
       selector:
         app: labdt-tradr
       ports:
-        - protocol: TCP
-          port: 80
-          targetPort: 3000
+        - nodePort: 32761
+          port: 3000
+      type: NodePort
